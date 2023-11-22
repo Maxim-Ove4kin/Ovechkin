@@ -1,0 +1,152 @@
+.glavnaya{position: absolute;
+width: 100%;
+height: 8%;
+
+top: 1px;
+display: inline-block;
+transform: translate(-0.49em, -0.1em);
+background: #919191;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+
+
+.top {
+  color: white;
+  font-size: 45px;
+  font-family: sans-serif;
+  display: inline-block;
+  transform: translate(1em, 1.5em);
+}
+
+.knopkaSingUp{
+  transition: 0.5s;
+  color: white;
+  border-radius: 20%;
+  font-size: 15px;
+  font-family: Verdana;
+  display: inline-block;
+  transform: translate(-2em, -0.5em);
+  float: right;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.knopkaDomoi{
+  transition: 0.5s;
+  border-radius: 20%;
+  font-size: 1px;
+  font-family: Verdana;
+  display: inline-block;
+  transform: translate(0em, -16em);
+  float: right;
+
+}
+
+.knopkaDomoi:hover {
+  transition: 0.4s;
+  color: white;
+  background: #919191;
+}
+
+.knopkaSozdat{
+  transition: 0.5s;
+  font-size: 20px;
+  font-family: Verdana;
+  display: inline-block;
+  transform: translate(0em, -0.5em);
+  float: left;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+
+}
+
+.knopkaSozdat:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.knopkaSozdat:active {
+    color: #000
+}
+
+.knopkaSozdat:active:after {
+    background: transparent;
+}
+
+.knopkaSozdat:hover:before {
+    opacity: 1;
+}
+
+.knopkaSozdat:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.Ove4kinGram {
+  display: inline-block;
+  transform: translate(0em, -3.1em);
+}
+
+.Theme {
+  display: inline-block;
+  transform: translate(4.3em, 0em);
+  color: white;
+}
+
+.knopkaSvetlaya {
+  transition: 0.5s;
+  display: inline-block;
+  transform: translate(-40em, 5em);
+  background: black;
+  color: white;
+}
+
+.knopkaSvetlaya:hover {
+  transition: 0.4s;
+  color: black;
+  background: white;
+}
+
+.knopkaTemnaya {
+  transition: 0.5s;
+  display: inline-block;
+  transform: translate(-40em, 5em);
+
+}
+
+.knopkaTemnaya:hover {
+  transition: 0.4s;
+  color: white;
+  background: black;
+}
